@@ -225,7 +225,8 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/6844ce30-4221-4a0f-baa4-ffb871f70048)
 
   4.Resize and flip Horizontally:
-
+  
+![image](https://github.com/user-attachments/assets/52f120d2-1e32-4f45-8ca6-30b834ada0d1)
 
   5.Read 'Apollo-11-launch.jpg' and  Display the final annotated image:
 
