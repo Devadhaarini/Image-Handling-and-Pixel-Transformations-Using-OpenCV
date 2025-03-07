@@ -30,8 +30,8 @@ Display the original, lower contrast, and higher contrast images.
 Split the image (boy.jpg) into B, G, R components and display the channels
 
 ## Program Developed By:
-- *Name:* VIKAASH K S
-- *Register Number:* 212223240179
+- *Name:* DEVADHAARINI.D
+- *Register Number:* 212223230040
 
   ### Ex. No. 01
 
@@ -77,26 +77,25 @@ img.shape
 
 #### 7. Crop the image to extract any specific (Eagle alone) object from the image.
 python
-cr = img_rgb[200:400,200:400] 
-plt.imshow(cr)
+crop = img_rgb[0:450,200:550] 
+plt.imshow(crop[:,:,::-1])
 plt.title("Cropped Region")
 plt.axis("off")
 plt.show()
-cr.shape
+crop.shape
 
 
 #### 8. Resize the image up by a factor of 2x.
 python
-res= cv2.resize(cr,(200*2, 200*2))
+res= cv2.resize(crop,(200*2, 200*2))
 
 
 #### 9. Flip the cropped/resized image horizontally.
 python
 flip= cv2.flip(res,1)
-plt.imshow(flip)
+plt.imshow(flip[:,:,::-1])
 plt.title("Flipped Horizontally")
 plt.axis("off")
-
 
 #### 10. Read in the image ('Apollo-11-launch.jpg').
 python
